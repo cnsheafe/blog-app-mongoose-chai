@@ -102,7 +102,7 @@ app.put('/posts/:id', (req, res) => {
 
 
 app.delete('/:id', (req, res) => {
-  BlogPosts
+  BlogPost
     .findByIdAndRemove(req.params.id)
     .exec()
     .then(() => {

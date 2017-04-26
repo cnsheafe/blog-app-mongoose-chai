@@ -23,7 +23,7 @@ blogPostSchema.methods.apiRepr = function() {
     title: this.title,
     created: this.created
   };
-}
+};
 
 const BlogPost = mongoose.model('BlogPost', blogPostSchema);
 
