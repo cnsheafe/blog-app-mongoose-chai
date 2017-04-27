@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: g+J1yoWUdaFqZBRODnm47aUctOuAOoJ66og8+eoZULNFvNeNtgg8/lu71qEcdmoqk+k/aFH4AfFmfTqzkbALrO6l03EZ1tRIDc1gHhjnQ0vXSxvUV6YuBn0ufwnqEe/P1x4kkMKfDPASWj5Ws/azDDYo3CLYSrqYs5kwApy2QqxC2C3NEMBn1s8N/vnIZrUTRfkqxrN0ozOl4jEuh04n2nIcBVQ75VNmwJTPU+ktIdOJT3Vhw4nPYd7z8/POGmIn28fgIjNB9+b4QWjn8bPDDcq6WdZbihtF7QZmE9kSOMY7TM7csqErM0JycNvZZ4GlVToD/X+pi5/uHQA+BcXsq3iV9GZqHOkBDfAqNtjnn0S37JNwmUFwgUKsbupVipC+p+v7A56KqI2iK8u8I0OcHs5yLTlTALABAYwXbWMZltmDDnMFN6tW/KbValLzDLLRKdr6EJXQMoFBafHNx3PZZlFr8JLeIa/vWYqNNDqwYUlh3b240XkUUK3m2pZI0AQpTN4Hb8Qvfx9NIObGffeYOVecsfN5OCtL/VJQZ/qnBNlkJXyfIcazMDK2bugWUivNj7Op7VCCG0ON8+EZ9obznYZ9LiTZgaRiwO0FJ7hjZGI0sUL2haThTw4VW9kNx08g7Kl3ZVqwr0rqlPmrgPB6SOF37mgcGqt3oppWJdBmmYc=
+  app: blog-post-mongoose
+  on:
+    repo: cnsheafe/blog-app-mongoose-chai
